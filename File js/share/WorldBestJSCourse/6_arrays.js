@@ -83,7 +83,8 @@
 // 4: Delete June from an array?
 
 // const months = ["Jan", "march", "April", "June", "July"];
-
+// months.splice(3, 3)
+// console.log(months)
 //* =========================================
 //*  Searching in an Array
 //* =========================================
