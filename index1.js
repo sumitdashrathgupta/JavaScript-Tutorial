@@ -60,10 +60,10 @@
 // console.log(number)
 
 let num = [1, 2, 3, 4, 2, 5, 66, 7, 8, 9]
-// console.log(num.indexOf(2,3))   search than index 1,2 or number is not in array than -1
-// console.log(num.includes(0))  search than true or falue
+ console.log(num.indexOf(2,3))   search than index 1,2 or number is not in array than -1
+ console.log(num.includes(0))  search than true or falue
 
-// Filter  1) Find Method 2) FindIndex Method
+ Filter  1) Find Method 2) FindIndex Method
 
 const Number = num.filter((Element) => {
     return Element > 4
