@@ -1,5 +1,5 @@
-let text="sumit gupta"
-let cat=Array.from(text)
+// let text="sumit gupta"
+// let cat=Array.from(text)
 // console.log(cat)
 
 // let elemap=cat.map((elemap,index)=>{
@@ -12,3 +12,8 @@ let cat=Array.from(text)
 // console.log(text.search(/u/i))
 // console.log(text.match("o"))
 // console.log(text.matchAll("g"))
+
+
+
+
+
