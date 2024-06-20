@@ -12,8 +12,3 @@
 // console.log(text.search(/u/i))
 // console.log(text.match("o"))
 // console.log(text.matchAll("g"))
-
-
-
-
-
