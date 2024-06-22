@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // const sum = (x, y) => {
 //     return x + y;
 // }
@@ -47,3 +48,7 @@ let name1 = "sumit gupta"
 
 //4)
 // console.log(name1.replace("gupta","Developer"))
+
+// const a="sumit gupta"
+// console.log(a.length)
+// >>>>>>> b215cb961411021708701da5e157f18f2012f51b
