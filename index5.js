@@ -9,7 +9,7 @@
 
 // String
 
-let name1 = "sumit gupta"
+//let name1 = "sumit gupta"
 // console.log(name1.length)
 // console.log(`My name is ${name1}`)
 // console.log(name1.toUpperCase())
