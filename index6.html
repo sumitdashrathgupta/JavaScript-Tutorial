@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Event</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        body {
+            background-color: gray;
+        }
+
+        input {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 8px;
+            text-align: center;
+            margin: 7% 0 2% 0;
+        }
+
+        input:hover {
+            outline: 2px solid rgb(219, 181, 99);
+        }
+
+        .contenar {
+            width: 25%;
+            border: 2px solid rgb(203, 104, 33);
+            padding: 20px;
+            background-color: black;
+
+            & p {
+                color: yellow;
+                font-weight: 600;
+                padding: 10px 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <input type="text" id="text" placeholder="Enter the key" autocomplete="off">
+        <div class="contenar">
+            <p class="keyf">Input Value :</p>
+            <p class="keys">Input Name :</p>
+            <p class="keyt">Input type :</p>
+            <p class="keyfo">Event Type :</p>
+        </div>
+    </main>
+    <script>
+        const inputext = document.querySelector("#text");
+
+        function namefunction(event) {
+            document.querySelector(".keyf").textContent = `Input Value : ${event.target.value}`;
+            document.querySelector(".keys").textContent = `Input Name  ${event.target.name}`;
+            document.querySelector(".keyt").textContent = `Input Type : ${event.inputType}`;
+            document.querySelector(".keyfo").textContent = `Event Type : ${event.type}`;
+        }
+        inputext.addEventListener('input', namefunction);
+    </script>
+</body>
+
+</html>
