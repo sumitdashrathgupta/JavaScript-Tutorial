@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyEvent</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        body {
+            background-color: gray;
+        }
+
+        input {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 8px;
+            text-align: center;
+            margin: 7% 0 2% 0;
+        }
+
+        input:hover {
+            outline: 2px solid rgb(219, 181, 99);
+        }
+
+        .contenar {
+            width: 25%;
+            border: 2px solid rgb(203, 104, 33);
+            padding: 20px;
+            background-color: black;
+
+            & p {
+                color: yellow;
+                font-weight: 600;
+                padding: 10px 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <input type="text" id="text" placeholder="Enter the key" autocomplete="off">
+        <div class="contenar">
+            <p class="keyf">Key Pressed :</p>
+            <p class="keys">Key Code :</p>
+            <p class="keyt">Char Code :</p>
+            <p class="keyfo">Key type :</p>
+        </div>
+    </main>
+    <script>
+        const inputext = document.querySelector("#text");
+        function handlekeypress(event) {
+            document.querySelector(".keyf").textContent = `Key Pressed : ${event.key}`;
+            document.querySelector(".keys").textContent = `Key Code : ${event.code}`;
+            document.querySelector(".keyt").textContent = `Char Code : ${event.key.charCodeAt(0)}`;
+            document.querySelector(".keyfo").textContent = `Key Type : ${event.type}`;
+            inputext.value = ""
+        }
+        inputext.addEventListener('keyup', handlekeypress);
+
+    </script>
+</body>
+
+</html>
