@@ -1,0 +1,8 @@
+// const define=new Date()
+// console.log(define)
+// const define1=new Date(2024,2)
+// console.log(define1)
+// const define1=new Date(2024,2,23)
+// console.log(define1)
+const define1=new Date(2024,2,23,20)
+console.log(define1)
