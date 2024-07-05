@@ -16,8 +16,11 @@
 // const date=new Date(2025,3,23)
 // console.log(date)
 
-const date=new Date()
+// const date=new Date()
 // const sys=date.toLocaleString()
 // const sys=date.toLocaleDateString()
-const sys=date.toLocaleTimeString()
-console.log(sys)
+// const sys=date.toLocaleTimeString()
+// console.log(sys)
+
+
+
